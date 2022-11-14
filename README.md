@@ -1,1 +1,1 @@
-# amex-default-classification
+# American Express Default Prediction
