@@ -33,9 +33,9 @@ with the following features being categorical:
 The dataset can be downloaded from [here](https://www.kaggle.com/competitions/amex-default-prediction).
 
 
-## EDA
+## Analysis
 
-The complete EDA notebook can be viewed [here](https://nbviewer.org/github/awinml/amex-default-classification/blob/main/amex-eda.ipynb).
+The complete analysis can be viewed [here](https://nbviewer.org/github/awinml/amex-default-classification/blob/main/amex-eda.ipynb).
 
 ### Target Distribution
 
@@ -89,7 +89,7 @@ The **proportion of customers that defualt is consistent across each day** in th
 - We observe that Payment 2 and Target are **highly negatively correlated**. 
 - This could be probably be due to the fact that people paying their bill have a less chance of default.
 
-## Results:
+## Experiments:
 
 - There is a substantial number of missing values in the data. These cannot be imputed since the features are anonymized and there is no clear rationale behind imputation.
 - This constraint forces us to choose models that can handle missing values.
@@ -105,6 +105,8 @@ Some of the prominent ones that may be used for classification and accept inputs
 - Hyperparameters of the XGBoost model such as `n_estimators`, `max_depth` and `learning_rate` were tuned to improve **Accuracy by 9%, F1-Score by 18% and ROC-AUC Score by 3%.**
 
 - Hyperparameters of the LightGBM model such as `n_estimators`, `feature_fraction` and `learning_rate` were tuned to improve **Accuracy by 0.1%, F1-Score by 6% and ROC-AUC Score by 10%.**
+
+## Results:
 
 - A **Soft Voting Classifier** was used to create a ensemble of both the models and was used for generating the final predictions. It achieved an **Accuracy of 94.48%, an F1-Score of 96.71% and an ROC-AUC Score of 96.40%.**
 
