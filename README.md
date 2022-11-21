@@ -1,13 +1,13 @@
 # American Express - Default Prediction
 
 
-- Built a classification model to predict the probability that a customer does not pay back their credit card balance (defaults) based on their monthly customer statements using the data provided by American Express.
+- Built a **classification model** to predict the probability that a customer does not pay back their credit card balance (defaults) based on their monthly customer statements using the data provided by American Express.
 
 - The data was particularly challenging to deal with as it had **5.5 millions records** and **191 annonymized features**. **122 features** had more than **10% missing values**. The target variable had **severe class imbalance**.
 
-- Aggregated exsisting features over time to engineer new features which helped increase model accuracy **by 12%**.
+- Aggregated existing features over time to engineer new features which helped **increase model accuracy by 12%**.
 
-- Optimized XGBoost and LightGBM Classifiers using RandomsearchCV to reach the best model.
+- **Optimized XGBoost and LightGBM Classifiers using RandomSearchCV** to reach the best model.
 
 - A Soft-Voting Ensemble of the best performing XGBoost and LightGBM Models was used to make final predictions which yielded an **Accuracy of 94.48%, an F1-Score of 96.71% and an ROC-AUC Score of 96.40%.**
 
@@ -34,6 +34,8 @@ The dataset can be downloaded from [here](https://www.kaggle.com/competitions/am
 
 
 ## EDA
+
+The complete EDA notebook can be viewed [here](https://nbviewer.org/github/awinml/amex-default-classification/blob/main/amex-eda.ipynb).
 
 ### Target Distribution
 
@@ -86,8 +88,6 @@ The **proportion of customers that defualt is consistent across each day** in th
 
 - We observe that Payment 2 and Target are **highly negatively correlated**. 
 - This could be probably be due to the fact that people paying their bill have a less chance of default.
-
-The complete EDA notebook can be viewed [here](https://nbviewer.org/github/awinml/amex-default-classification/blob/main/amex-eda.ipynb).
 
 ## Results:
 
