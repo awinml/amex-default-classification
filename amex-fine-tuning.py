@@ -76,12 +76,12 @@ lgbm_model = LGBMClassifier(
 
 # Defining the search space
 params = {
-    "n_estimators": np.array([100], dtype="int64"),
+    "n_estimators": np.array([100, 150], dtype="int64"),
     "boosting_type": np.array(["gbdt"]),
     "learning_rate": np.arange(0.01, 0.05, 0.01, dtype="float64"),
-    "feature_fraction": np.array([0.3], dtype="float64"),
-    "bagging_fraction": [0.3],
-    "reg_lambda": [10],
+    "feature_fraction": np.array([0.3, 0.4], dtype="float64"),
+    "bagging_fraction": [0.3, 0.5],
+    "reg_lambda": [10, 12],
 }
 
 # Using Randomized Search to get best parameters
