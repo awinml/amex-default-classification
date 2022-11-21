@@ -108,7 +108,7 @@ Some of the prominent ones that may be used for classification and accept inputs
 
 ## Results:
 
-- A **Soft Voting Classifier** was used to create a ensemble of both the models and was used for generating the final predictions. It achieved an **Accuracy of 94.48%, an F1-Score of 96.71% and an ROC-AUC Score of 96.40%.**
+A **Soft Voting Classifier** was used to create a ensemble of both the models and was used for generating the final predictions. It achieved an **Accuracy of 94.48%, an F1-Score of 96.71% and an ROC-AUC Score of 96.40%.**
 
 The results from all the models have been summarized below:
 
