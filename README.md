@@ -138,10 +138,9 @@ The results from all the models have been summarized below:
       ```
 
 
-## License
+## License  &nbsp;&nbsp; [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Author: [@awinml](https://www.github.com/awinml) &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+Author: [@awinml](https://www.github.com/awinml) 
 
 
 ## Feedback
