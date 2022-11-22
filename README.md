@@ -91,10 +91,13 @@ The **proportion of customers that defualt is consistent across each day** in th
 
 ## Experiments:
 
-- There is a substantial number of missing values in the data. These cannot be imputed since the features are anonymized and there is no clear rationale behind imputation.
-- This constraint forces us to choose models that can handle missing values.
-Some of the prominent ones that may be used for classification and accept inputs with missing values are XGBoost, LightGBM, and CatBoost.
-- They all internally impute the data depending on whatever imputation technique delivers the greatest performance benefit.
+- There is a substantial number of missing values in the data. These cannot be imputed since the features are anonymized and there is no clear rationale behind imputation. This constraint forces us to choose models that can handle missing values.
+
+- There is a **high cardinality of features ie. 191 features** in the data. The presence of missing values restricts the usage of traditional dimensionality reduction techniques like PCA as well as feature selection methods like RFE.
+
+- Instead we have engineer new features using aggregations over the time dimension. As the aggregations ignore missing values, the engineered features are dense and can be used for modelling.
+
+- Some of the prominent models that are used for classification and accept inputs with missing values are XGBoost, LightGBM, and CatBoost. They all internally impute the data depending on whatever imputation technique delivers the greatest performance benefit.
 
 - A baseline was created using a XGBoost model with default hyperparameters which yielded an **Accuracy of 78.84%, an F1-Score of 54.64% and an ROC-AUC Score of 65.72%.**
  
