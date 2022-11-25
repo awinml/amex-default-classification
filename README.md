@@ -60,7 +60,7 @@ The **proportion of customers that defualt is consistent across each day** in th
 <img src="plots/1_statements_over_time.png" alt="Target Distribution" width="500" height="250">
 <br>
 
-- There is **weekly seasonal trend** observed in the number of statements recieved per day. 
+- There is **weekly seasonal pattern** observed in the number of statements recieved per day. 
 - As seen above this trend does not seem to be significantly affecting the proportion of default.
 
 
