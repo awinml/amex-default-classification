@@ -2,7 +2,7 @@
 
 - Built a **classification model** to predict the probability that a customer does not pay back their credit card balance (defaults) based on their monthly customer statements using the data provided by American Express.
 
-- The data was particularly challenging to deal with as it had **5.5 millions records** and **191 anonymized features**. **122 features** had more than **10% missing values**. The target variable had **severe class imbalance**.
+- The data was particularly challenging to deal with as it had **5.5 million records** and **191 anonymized features**. **122 features** had more than **10% missing values**. The target variable had **severe class imbalance**.
 
 - Engineered new features by taking different aggregations over time which helped **increase model accuracy by 12%**.
 
