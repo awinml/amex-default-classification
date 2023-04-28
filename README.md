@@ -1,5 +1,10 @@
 # American Express - Default Prediction
 
+<div align='center'>
+   <img src="amex_cover.jpg"  width="500" height="300">
+<br/>
+</div>
+
 - Built a **classification model** to predict the probability that a customer does not pay back their credit card balance (defaults) based on their monthly customer statements using the data provided by American Express.
 
 - The data was particularly challenging to deal with as it had **5.5 million records** and **191 anonymized features**. **122 features** had more than **10% missing values**. The target variable had **severe class imbalance**.
